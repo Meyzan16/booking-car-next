@@ -8,4 +8,10 @@ export interface CustomButtonProps {
     btnType?: "button" | "submit";
 }
 
+
+export interface SearchManufacturerProps {
+    manufacturer: string;
+    setmanufacturer?: (manufaturer: string) => void;
+}
+
 //tanda tanya artianya opsional
