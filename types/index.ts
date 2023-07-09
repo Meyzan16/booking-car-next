@@ -1,5 +1,6 @@
 import { MouseEventHandler } from "react";
 
+//custom data button
 export interface CustomButtonProps {
     title: string;
     containerStyles?: string;
@@ -16,6 +17,7 @@ export interface SearchManufacturerProps {
     setmanufacturer?: (manufaturer: string) => void;
 }
 
+//data carCard
 export interface CarProps {
     city_mpg:number;
     class:string;
@@ -29,6 +31,15 @@ export interface CarProps {
     model:string;
     transmission:string;
     year: number;
+}
+
+// search engine
+export interface FilterProps{
+    manufacturer: string;
+    year: year;
+    fuel: string;
+    limit: number;
+    model: string;
 }
  
 //tanda tanya artianya opsional
