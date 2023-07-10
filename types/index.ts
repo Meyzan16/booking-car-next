@@ -36,10 +36,29 @@ export interface CarProps {
 // search engine
 export interface FilterProps{
     manufacturer: string;
-    year: year;
+    year: number;
     fuel: string;
     limit: number;
     model: string;
+}
+
+
+// custom options page
+export interface OptionProps {
+    title: string;
+    value: string;
+}
+
+export interface CustomFilterProps {
+    title: string;
+    options: OptionProps[];
+}
+
+
+//custom show more
+export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
 }
  
 //tanda tanya artianya opsional
